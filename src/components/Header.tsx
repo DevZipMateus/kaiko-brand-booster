@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo-kaiko.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,18 +18,22 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-      setIsMobileMenuOpen(false);
+  const handleNavigation = (sectionId: string) => {
+    if (location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      navigate(`/#${sectionId}`);
     }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -37,38 +44,38 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src={logo} alt="KAIKO BRINDES" className="h-12 w-auto" />
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection("inicio")}
+              onClick={() => handleNavigation("inicio")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Início
             </button>
             <button
-              onClick={() => scrollToSection("sobre")}
+              onClick={() => handleNavigation("sobre")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Sobre
             </button>
             <button
-              onClick={() => scrollToSection("produtos")}
+              onClick={() => handleNavigation("produtos")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Produtos
             </button>
-            <a
-              href="/vitrine"
+            <Link
+              to="/vitrine"
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Vitrine
-            </a>
+            </Link>
             <button
-              onClick={() => scrollToSection("contato")}
+              onClick={() => handleNavigation("contato")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Contato
@@ -98,31 +105,32 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
             <button
-              onClick={() => scrollToSection("inicio")}
+              onClick={() => handleNavigation("inicio")}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Início
             </button>
             <button
-              onClick={() => scrollToSection("sobre")}
+              onClick={() => handleNavigation("sobre")}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Sobre
             </button>
             <button
-              onClick={() => scrollToSection("produtos")}
+              onClick={() => handleNavigation("produtos")}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Produtos
             </button>
-            <a
-              href="/vitrine"
+            <Link
+              to="/vitrine"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Vitrine
-            </a>
+            </Link>
             <button
-              onClick={() => scrollToSection("contato")}
+              onClick={() => handleNavigation("contato")}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Contato
