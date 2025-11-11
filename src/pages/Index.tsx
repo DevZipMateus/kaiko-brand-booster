@@ -16,6 +16,7 @@ const Index = () => {
         <Contact />
       </main>
       <WhatsAppButton />
+      <div style={{ height: "63px" }} className="w-full" />
     </div>
   );
 };
