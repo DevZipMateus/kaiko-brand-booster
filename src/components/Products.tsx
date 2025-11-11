@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import ProductCarousel from "@/components/ProductCarousel";
 import {
   Package,
   Coffee,
@@ -66,6 +67,10 @@ const Products = () => {
             Oferecemos uma ampla variedade de brindes personalizados para atender às
             necessidades da sua empresa ou evento
           </p>
+        </div>
+
+        <div className="mb-12">
+          <ProductCarousel />
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
