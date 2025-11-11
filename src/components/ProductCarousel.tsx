@@ -29,6 +29,16 @@ import produto16 from "@/assets/produtos/produto-16.jpg";
 import produto17 from "@/assets/produtos/produto-17.jpg";
 import produto18 from "@/assets/produtos/produto-18.jpg";
 import produto19 from "@/assets/produtos/produto-19.jpg";
+import produto20 from "@/assets/produtos/produto-20.jpg";
+import produto21 from "@/assets/produtos/produto-21.jpg";
+import produto22 from "@/assets/produtos/produto-22.jpg";
+import produto23 from "@/assets/produtos/produto-23.jpg";
+import produto24 from "@/assets/produtos/produto-24.jpg";
+import produto25 from "@/assets/produtos/produto-25.jpg";
+import produto26 from "@/assets/produtos/produto-26.jpg";
+import produto27 from "@/assets/produtos/produto-27.jpg";
+import produto28 from "@/assets/produtos/produto-28.jpg";
+import produto29 from "@/assets/produtos/produto-29.jpg";
 
 const ProductCarousel = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -53,6 +63,16 @@ const ProductCarousel = () => {
     produto17,
     produto18,
     produto19,
+    produto20,
+    produto21,
+    produto22,
+    produto23,
+    produto24,
+    produto25,
+    produto26,
+    produto27,
+    produto28,
+    produto29,
   ];
 
   return (
