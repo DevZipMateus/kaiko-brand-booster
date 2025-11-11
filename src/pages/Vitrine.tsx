@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import MonteSiteBadge from "@/components/MonteSiteBadge";
 
 const Vitrine = () => {
   return (
@@ -11,7 +12,7 @@ const Vitrine = () => {
           title="Demonstração de Vitrine"
         />
       </main>
-      <div style={{ height: "63px" }} className="w-full" />
+      <MonteSiteBadge />
     </div>
   );
 };

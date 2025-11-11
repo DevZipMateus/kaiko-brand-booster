@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Products from "@/components/Products";
 import Contact from "@/components/Contact";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import MonteSiteBadge from "@/components/MonteSiteBadge";
 
 const Index = () => {
   return (
@@ -16,7 +17,7 @@ const Index = () => {
         <Contact />
       </main>
       <WhatsAppButton />
-      <div style={{ height: "63px" }} className="w-full" />
+      <MonteSiteBadge />
     </div>
   );
 };
