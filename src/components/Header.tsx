@@ -61,6 +61,12 @@ const Header = () => {
             >
               Produtos
             </button>
+            <a
+              href="/vitrine"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Vitrine
+            </a>
             <button
               onClick={() => scrollToSection("contato")}
               className="text-foreground hover:text-primary transition-colors font-medium"
@@ -109,6 +115,12 @@ const Header = () => {
             >
               Produtos
             </button>
+            <a
+              href="/vitrine"
+              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Vitrine
+            </a>
             <button
               onClick={() => scrollToSection("contato")}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
