@@ -8,7 +8,7 @@ import MonteSiteBadge from "@/components/MonteSiteBadge";
 
 const Index = () => {
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen">
       <Header />
       <main>
         <Hero />
