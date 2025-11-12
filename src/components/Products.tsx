@@ -100,32 +100,16 @@ const Products = () => {
             Nosso compromisso é satisfazer o cliente com um produto de qualidade, preço
             acessível e pequeno prazo de entrega
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              size="lg"
-              variant="secondary"
-              className="bg-background text-primary hover:bg-background/90"
-            >
-              <a
-                href="https://wa.me/5569999993301"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Solicitar catálogo completo
-              </a>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="bg-transparent border-background text-primary-foreground hover:bg-background/10"
-            >
-              <a href="/vitrine">
-                Ver vitrine online
-              </a>
-            </Button>
-          </div>
+          <Button
+            asChild
+            size="lg"
+            variant="secondary"
+            className="bg-background text-primary hover:bg-background/90"
+          >
+            <a href="/vitrine">
+              Ver vitrine online
+            </a>
+          </Button>
         </div>
       </div>
     </section>
