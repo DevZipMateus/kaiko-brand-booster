@@ -4,19 +4,19 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-16 md:py-24 bg-background">
+    <section id="contato" className="py-12 md:py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
             Entre em contato
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
             Estamos prontos para atender você e criar os melhores brindes para sua
             empresa
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
           <Card className="border-primary/20">
             <CardContent className="p-6 space-y-6">
               <div>
@@ -114,11 +114,11 @@ const Contact = () => {
             </CardContent>
           </Card>
 
-          <div className="bg-primary rounded-lg p-8 flex flex-col justify-center items-center text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+          <div className="bg-primary rounded-lg p-6 md:p-8 flex flex-col justify-center items-center text-center">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-foreground mb-3 md:mb-4">
               Pronto para começar?
             </h3>
-            <p className="text-primary-foreground/90 text-lg mb-8 max-w-md">
+            <p className="text-primary-foreground/90 text-base md:text-lg mb-6 md:mb-8 max-w-md">
               Entre em contato agora e solicite um orçamento sem compromisso para seus
               brindes personalizados
             </p>
@@ -126,7 +126,7 @@ const Contact = () => {
               asChild
               size="lg"
               variant="secondary"
-              className="bg-background text-primary hover:bg-background/90"
+              className="bg-background text-primary hover:bg-background/90 w-full sm:w-auto"
             >
               <a
                 href="https://wa.me/5569999993301"

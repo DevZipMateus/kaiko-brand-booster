@@ -4,14 +4,14 @@ import logo from "@/assets/logo-kaiko.png";
 const Footer = () => {
   return (
     <footer className="bg-secondary border-t border-border">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Logo e Descrição */}
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4 col-span-1 sm:col-span-2 lg:col-span-1">
             <img
               src={logo}
               alt="KAIKO BRINDES"
-              className="h-16 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
             <p className="text-muted-foreground text-sm">
               Bonés e brindes personalizados de alta qualidade para promover sua marca com estilo e profissionalismo.
@@ -131,8 +131,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-border pt-8 text-center">
-          <p className="text-muted-foreground text-sm">
+        <div className="border-t border-border pt-6 md:pt-8 text-center">
+          <p className="text-muted-foreground text-xs md:text-sm">
             © {new Date().getFullYear()} KAIKO Brindes. Todos os direitos reservados.
           </p>
         </div>

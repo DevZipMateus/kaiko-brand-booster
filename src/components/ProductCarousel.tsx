@@ -89,11 +89,11 @@ const ProductCarousel = () => {
             stopOnMouseEnter: false,
           }),
         ]}
-        className="w-full max-w-6xl mx-auto"
+        className="w-full max-w-6xl mx-auto px-4 md:px-0"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-2 md:-ml-4">
           {images.map((image, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
               <div className="p-1">
                 <Card className="border-primary/20 hover:border-primary/50 transition-all duration-300 cursor-pointer">
                   <CardContent 
@@ -111,12 +111,12 @@ const ProductCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hidden md:flex" />
+        <CarouselNext className="hidden md:flex" />
       </Carousel>
 
       <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-4xl p-0 border-0">
+        <DialogContent className="max-w-[95vw] sm:max-w-4xl p-2 sm:p-4 border-0">
           {selectedImage && (
             <img
               src={selectedImage}

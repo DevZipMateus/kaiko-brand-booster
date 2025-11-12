@@ -3,20 +3,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-16 md:py-24 bg-background">
+    <section id="sobre" className="py-12 md:py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
             Sobre nós
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
             A KAIKO Brindes está no mercado há mais de 10 anos, investindo sempre em
             novas ideias para que nossos produtos façam a diferença na hora de promover
             seu negócio ou evento.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
           <Card className="border-primary/20 hover:border-primary/50 transition-colors">
             <CardHeader>
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
@@ -68,8 +68,8 @@ const About = () => {
           </Card>
         </div>
 
-        <div className="bg-secondary rounded-lg p-8 md:p-12 text-center">
-          <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto leading-relaxed">
+        <div className="bg-secondary rounded-lg p-6 md:p-8 lg:p-12 text-center">
+          <p className="text-base md:text-lg lg:text-xl text-foreground max-w-4xl mx-auto leading-relaxed">
             Com uma equipe especializada na fabricação de produtos promocionais em alta
             qualidade, nossa missão é fazer com que sua mensagem chegue de forma
             diferenciada ao público. Pensamos em cada detalhe para que sua promoção

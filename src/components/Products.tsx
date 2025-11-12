@@ -57,23 +57,23 @@ const Products = () => {
   ];
 
   return (
-    <section id="produtos" className="py-16 md:py-24 bg-secondary">
+    <section id="produtos" className="py-12 md:py-16 lg:py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
             Nossos produtos
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
             Oferecemos uma ampla variedade de brindes personalizados para atender às
             necessidades da sua empresa ou evento
           </p>
         </div>
 
-        <div className="mb-12">
+        <div className="mb-8 md:mb-12">
           <ProductCarousel />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
           {products.map((product, index) => (
             <Card
               key={index}
@@ -92,11 +92,11 @@ const Products = () => {
           ))}
         </div>
 
-        <div className="bg-primary rounded-lg p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+        <div className="bg-primary rounded-lg p-6 md:p-8 lg:p-12 text-center">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-foreground mb-3 md:mb-4">
             Produtos de qualidade com preço acessível
           </h3>
-          <p className="text-primary-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-primary-foreground/90 text-base md:text-lg mb-6 md:mb-8 max-w-2xl mx-auto">
             Nosso compromisso é satisfazer o cliente com um produto de qualidade, preço
             acessível e pequeno prazo de entrega
           </p>
@@ -104,7 +104,7 @@ const Products = () => {
             asChild
             size="lg"
             variant="secondary"
-            className="bg-background text-primary hover:bg-background/90"
+            className="bg-background text-primary hover:bg-background/90 w-full sm:w-auto"
           >
             <a href="/vitrine">
               Ver vitrine online
