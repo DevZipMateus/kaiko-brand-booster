@@ -50,6 +50,13 @@ const Hero = () => {
             >
               <a href="#produtos">Ver produtos</a>
             </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+            >
+              <a href="/vitrine">Acessar vitrine</a>
+            </Button>
           </div>
         </div>
       </div>
