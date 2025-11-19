@@ -22,9 +22,6 @@ const Hero = () => {
             alt="KAIKO BRINDES"
             className="w-48 sm:w-64 md:w-80 mb-6 md:mb-8 animate-fade-in"
           />
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 md:mb-6 px-4">
-            KAIKO BRINDES
-          </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 md:mb-8 max-w-2xl px-4">
             Bonés e brindes personalizados de alta qualidade para promover sua marca com
             estilo e profissionalismo
