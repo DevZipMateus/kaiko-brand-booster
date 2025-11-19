@@ -26,7 +26,7 @@ const Hero = () => {
             Bonés e brindes personalizados de alta qualidade para promover sua marca com
             estilo e profissionalismo
           </h2>
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-accent font-display mb-6 md:mb-10 px-4">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 md:mb-10 px-4 bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
             Ideal para divulgar sua empresa!
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto px-4">
