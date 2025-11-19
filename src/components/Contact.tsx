@@ -58,6 +58,8 @@ const Contact = () => {
                       <p className="text-muted-foreground">
                         Avenida Presidente Tancredo Neves, 1465
                         <br />
+                        Vilhena - RO
+                        <br />
                         CEP 76.981-137
                       </p>
                     </div>

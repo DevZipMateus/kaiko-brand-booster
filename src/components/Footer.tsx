@@ -84,6 +84,8 @@ const Footer = () => {
                 <p className="text-muted-foreground text-sm">
                   Av. Presidente Tancredo Neves, 1465
                   <br />
+                  Vilhena - RO
+                  <br />
                   CEP 76.981-137
                 </p>
               </li>
