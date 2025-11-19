@@ -82,7 +82,7 @@ const Header = () => {
             </button>
             <Button asChild variant="default" size="sm">
               <a
-                href="https://wa.me/5569999993301"
+                href="https://wa.me/556993497888"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -137,7 +137,7 @@ const Header = () => {
             </button>
             <Button asChild variant="default" size="sm" className="w-full">
               <a
-                href="https://wa.me/5569999993301"
+                href="https://wa.me/556993497888"
                 target="_blank"
                 rel="noopener noreferrer"
               >
