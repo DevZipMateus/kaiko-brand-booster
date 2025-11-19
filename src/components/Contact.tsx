@@ -30,10 +30,10 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-foreground">Telefone</p>
                       <a
-                        href="tel:+5569999993301"
+                        href="tel:+556993497888"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        (69) 99999-3301
+                        (69) 99349-7888
                       </a>
                     </div>
                   </div>
@@ -129,7 +129,7 @@ const Contact = () => {
               className="bg-background text-primary hover:bg-background/90 w-full sm:w-auto"
             >
               <a
-                href="https://wa.me/5569999993301"
+                href="https://wa.me/556993497888"
                 target="_blank"
                 rel="noopener noreferrer"
               >

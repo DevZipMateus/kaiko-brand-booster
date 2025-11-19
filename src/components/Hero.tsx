@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto px-4">
             <Button asChild size="lg" variant="default" className="w-full sm:w-auto">
               <a
-                href="https://wa.me/5569999993301"
+                href="https://wa.me/556993497888"
                 target="_blank"
                 rel="noopener noreferrer"
               >
